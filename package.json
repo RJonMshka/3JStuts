@@ -1,0 +1,31 @@
+{
+  "name": "3jstuts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -k \"npx tsc -p ./src/server -w\" \"npx tsc -p ./src/client -w\" \"nodemon ./dist/server/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RJonMshka/3JStuts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RJonMshka/3JStuts/issues"
+  },
+  "homepage": "https://github.com/RJonMshka/3JStuts#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.12.0",
+    "express": "^4.17.1",
+    "three": "^0.125.0"
+  }
+}
