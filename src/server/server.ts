@@ -22,6 +22,7 @@ class App {
                 )
             )
         );
+        app.use('/jsm/libs/stats.module', express.static(path.join(__dirname, '../../node_modules/three/examples/jsm/libs/stats.module.js')))
         this.server = new http.Server(app);
     }
 
